@@ -10,7 +10,7 @@ const User = require("../models/user");
 
 
 beforeAll((done) => {
-  mongoose.connect('${{secret.DB_URI_TEST}}' ,
+  mongoose.connect(process.env.DB_URI_TEST ,
     { useNewUrlParser: true, useUnifiedTopology: true },
     () =>  done());
 });
@@ -186,7 +186,7 @@ describe('Agents rights', () => {
     const userPayload = {
       userId: agentId
     }
-    console.log(ticketId)
+    
     const jwtToken = await jwt.sign(userPayload, process.env.JWT_SECRET);
     const res = await supertest(app)
     .post(`/api/comment/user/${agentId}/ticket/${ticketId}`)
