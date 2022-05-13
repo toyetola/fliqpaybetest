@@ -31,7 +31,7 @@ This system have user roles defined in ```./auth/role.js```
 
  - __admin__ - top-level who can do everything (including managing users) agents can do and beyond
  - __agent__ - agent see request tickets, comments on tickets and update ticket statuses
- - __customer__ - create an account, submit support tickets, view owned support request and statuses, comments on ticket when an agent or admin as replied.
+ - __customer__ - create an account, submit support tickets, view owned support request and statuses, comments on ticket when an agent or admin has replied.
 
  **Routes**
 
