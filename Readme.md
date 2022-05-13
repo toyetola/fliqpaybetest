@@ -16,7 +16,7 @@ npm run dev
 ```
 to run the app in development
 
-Create a ```.env``` file to include the following keys
+Create a ```.env``` file in the root folder of the project to include the following keys
 
 ```
 JWT_SECRET = ANY_SECRET_KEY
