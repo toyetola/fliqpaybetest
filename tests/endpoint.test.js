@@ -10,7 +10,7 @@ const User = require("../models/user");
 
 
 beforeAll((done) => {
-  mongoose.connect(process.env.DB_URI_TEST,
+  mongoose.connect('${{secret.DB_RI_TEST}}' ,
     { useNewUrlParser: true, useUnifiedTopology: true },
     () =>  done());
 });
